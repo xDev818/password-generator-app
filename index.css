@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #08061a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  width: 330px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Data Box Styling */
+.wrapper .data{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .data h2{
+  text-align: center;
+  color: #ffffff52;
+}
+
+.wrapper .data_box{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  background-color: #24232a;
+  padding: 15px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.wrapper .data_box input {
+  background-color: transparent;
+  border: none;
+  color: #ffffff59;
+  cursor: context-menu;
+}
+
+.wrapper .data_box input::selection {
+  background: rgba(128, 128, 128, 0.233);
+}
+
+.wrapper .data_box input:focus-visible{
+  outline: none;
+}
+
+.wrapper .data_box button{
+  border: none;
+  background: transparent;
+  color: #5daf82;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Form and Inputs Styling */
+.wrapper form{
+  width: 100%;
+  padding: 15px;
+  background-color: #24232a;
+}
+
+.wrapper form .character_length{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.wrapper form .character_length h4{
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.wrapper form .character_length h2{
+  display: inline-block;
+  color: #5daf82;
+}
+
+.wrapper form input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  height: 6px;
+  background: #18171f;
+  margin-bottom: 20px;
+}
+
+.wrapper form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 20px;
+  width: 20px;
+  background-color: #18171f;
+  border-radius: 50%;
+  border: 2px solid #5daf82;
+  transition: .2s ease-in-out;
+}
+
+.wrapper form input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #f50;
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+.wrapper form .inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.wrapper form .inputs .inputs_data{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.wrapper form .inputs .inputs_data input{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wrapper form .inputs .inputs_data label{
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+/* Strength Styling */
+.wrapper form .strength{
+  display: flex;
+  background-color: #18171f;
+  height: 50px;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.wrapper form .strength h4{
+  opacity: 0.7;;
+}
+
+.wrapper form .strength .spans_container {
+  display: flex;
+}
+
+.wrapper form .strength .spans_container h3{
+  opacity: 0.9;
+  margin-right: 7px;
+}
+
+.wrapper form .strength .spans_container span{
+  width: 6px;
+  height: 20px;
+  background-color: #969696;
+  margin-right: 5px;
+}
+
+.wrapper form .strength .spans_container span.bad{
+  background-color: red;
+  opacity: 0.4;
+}
+
+.wrapper form .strength .spans_container span.weak{
+  background-color: orange;
+  opacity: 0.6;
+}
+
+.wrapper form .strength .spans_container span.good{
+  background-color: green;
+  opacity: 0.8;
+}
+
+.wrapper form .strength .spans_container span.perfect{
+  background-color: lime;
+  opacity: 1;
+}
+
+.wrapper form button {
+  background-color: #5daf82;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.wrapper form button:hover{
+  background-color: #3f9064;
+  width: 100%;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.wrapper form button:active {
+  background: #51ce89;
+  color: #3f9064;
+}
+
+footer {
+  background-color: #24232a;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 1em 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
+footer small {
+  color: gray;
+  font-size: 13px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 915px) {
+  
+  .container {
+    overflow-y: scroll;
+    flex-direction: row;
+    padding: 1em 0;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+  .wrapper {
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 280px) {
+  
+  .wrapper {
+    width: 260px;
+  }
+
+}
+
+@media screen and (max-width: 240px) {
+  
+  .wrapper {
+    width: 230px;
+  }
+
+}

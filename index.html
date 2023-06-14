@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="padlock.png">
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js" defer></script>
+	<title>Password Generator App</title>
+</head>
+<body>
+    
+	<div class="container">
+
+		<div class="wrapper">
+
+			<div class="data">
+	
+				<h2>Password Generator</h2>
+	
+				<div class="data_box">
+	
+					<input type="text" placeholder="The password will be here" readonly>
+					<button>copy</button>
+	
+				</div>
+	
+			</div>
+	
+			<form>
+	
+				<div class="character_length">
+					<h4>Character Length</h4>
+					<h2>5</h2>
+				</div>
+	
+				<input type="range" name="range" min="5" max="15" value="5">
+	
+				<div class="inputs">
+						
+					<div class="inputs_data">
+						<input type="checkbox" name="uppercase" id="uppercase">
+						<label for="uppercase">Include UpperCase Letters</label>
+					</div>
+	
+					<div class="inputs_data">
+						<input type="checkbox" name="lowercase" id="lowercase">
+						<label for="lowercase">Include LowerCase Letters</label>
+					</div>
+	
+					<div class="inputs_data">
+						<input type="checkbox" name="number" id="number">
+						<label for="number">Include Numbers</label>
+					</div>
+	
+					<div class="inputs_data">
+						<input type="checkbox" name="symbol" id="symbol">
+						<label for="symbol">Include Symbols</label>
+					</div>
+	
+				</div>
+	
+				<div class="strength">
+	
+					<h4>Strength</h4>
+					
+					<div class="spans_container">
+	
+						<h3 class="strong">none</h3>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+							
+					</div>
+	
+				</div>
+	
+				<button type="button">Generate →</button>
+				
+			</form>
+			
+			<footer>
+				<small> Password Generator App : Developed By Jinshin19 </small>
+			</footer>
+		
+		</div>
+		
+	</div>
+    
+</body>
+</html>
